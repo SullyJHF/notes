@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node --copy-files",
-    "build": "babel src -d .build --copy-files",
+    "start": "webpack && nodemon src/index.js --exec babel-node --copy-files",
+    "build": "webpack && babel src -d .build --copy-files",
     "serve": "node .build/index.js"
   },
   "author": "Sullivan Ford",
@@ -15,7 +15,12 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "nodemon": "^1.19.1"
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "ejs": "^2.6.2",
