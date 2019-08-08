@@ -1,4 +1,3 @@
-import apple from './apple';
 import LocalStorage from './local-storage';
 
 let textarea = document.getElementById('notes');
