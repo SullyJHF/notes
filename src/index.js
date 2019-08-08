@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 let app = express();
 
 app.use(middleware(compiler, {
-  publicPath: '/js'//path.join(__dirname, '/src/js/bund')
+  publicPath: '/js'
 }));
 
 app.set('view engine', 'ejs');

@@ -1,4 +1,7 @@
 import LocalStorage from './local-storage';
+import Note from './note';
+
+let note = new Note('notes');
 
 let textarea = document.getElementById('notes');
 textarea.value = LocalStorage.getItem('note');
